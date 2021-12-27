@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrr6rMSoVm3VUk3J1rP5h4pRvBK3zpfxvd4Q&usqp=CAU" type="image/x-icon">
+    <title>ALI | Note-Book</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Firebase Database -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+</head>
+
+<body class="container">
+
+    <section class="" id="main-section">
+        <h2 id="heading">Note-Book App</h2>
+        <br>
+        <div class="animate__animated animate__fadeInLeftBig line"></div>
+        <br>
+        <div class="input-box">
+            <label for="title">
+                Title
+                <br>
+                <input class="animate__animated animate__fadeInRight" type="text" name="title" id="tile-input">
+            </label>
+            <label for="Description">
+                Description
+                <br>
+                <input class="animate__animated animate__fadeInLeft" type="text" name="Description" id="Desc-input">
+            </label>
+            <br>
+            <div class="btns-div">
+                <abbr title="Add Note"><button onclick="addItem()" class="animate__animated animate__fadeInLeft"><i class="far fa-clipboard"></i></button></abbr>
+                <abbr title="Delete All Notes"><button onclick="deleteAll()" class="animate__animated animate__fadeInRight"><i class="far fa-trash-alt"></i></button></abbr>
+            </div>
+        </div>
+        <div id="notes-box" class="notes-box row">
+            
+        </div>
+    </section>
+<br>
+<br>
+<section class="marquee">
+    <marquee behavior="" direction="right">Developer: M.ALI</marquee>
+</section>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #514A9D, #24C6DC); 
+    letter-spacing: 5px;
+}
+#heading{
+    text-align: center;
+}
+.input-box{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    /* align-items: center; */
+}
+.input-box input{
+    /* border: 1px solid red; */
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    padding: 0 5px;
+    /* background-color: ; */
+}
+.input-box input:focus{
+    background-color: skyblue;
+    color: black;
+}
+.line{
+    border: 2px solid navy
+}
+.btns-div button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: navy;
+    color: #fff;
+    transition: 1s;
+}
+.btns-div button:hover{
+    background-color: black !important;
+    transform: translateY(10%) !important;
+}
+.user-div{
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.user-div i{
+    margin-top: 10px;
+    font-size: 24px;
+}
+.notes-box section{
+    background-color: rgb(26, 177, 204);
+    padding: 10px;
+    overflow: hidden;
+}
+.box-line{
+    border-bottom: 2px solid black;
+}
